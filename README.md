@@ -2,6 +2,8 @@
 
 Utility gem for encoding/decoding Ruby objects using Base64 from the standard library
 
+[![Build Status](https://travis-ci.org/sauy7/encrypted_objects.svg)](https://travis-ci.org/sauy7/encrypted_objects)
+
 ## Installation
 
 Add this line to your application's Gemfile:
