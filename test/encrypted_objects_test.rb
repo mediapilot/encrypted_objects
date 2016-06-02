@@ -33,8 +33,8 @@ class EncryptedObjectsTest < Minitest::Spec
 
   [
       [3,4,5],
-      {'wo' => 'there'},
-      [{'this' => 'should', 'work' => [3, 5.3, nil, {'egg' => false}]}, [], true]
+      {wo: 'there'},
+      [{this: 'should', work: [3, 5.3, nil, {egg: false}]}, [], true]
   ].each do |object|
     it "should correctly json encode #{object.inspect} properly with no padding/line break" do
       encoded = json_b64_encode(object)

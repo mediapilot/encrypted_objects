@@ -28,7 +28,7 @@ module EncryptedObjects
 
   def json_decode(string = "")
     raise BadString, "can't decode blank string" if string.empty?
-    MultiJson.decode(string)
+    MultiJson.decode(string, symbolize_keys: true)
   rescue MultiJson::DecodeError => e
     raise BadString, "couldn't json decode string - got #{e}"
   end
